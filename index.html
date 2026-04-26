@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>残肢求生 Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="top-bar" aria-label="战斗状态">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span data-i18n="appTitle">残肢求生</span>
+      </div>
+      <div class="stat">
+        <span data-i18n="hp">生命</span>
+        <strong id="hpText">100 / 100</strong>
+      </div>
+      <div class="meter" aria-hidden="true">
+        <span id="hpBar"></span>
+      </div>
+      <div class="stat">
+        <span data-i18n="round">回合</span>
+        <strong id="roundText">第 1 回合</strong>
+      </div>
+      <div class="stat">
+        <span data-i18n="timer">计时</span>
+        <strong id="timeText">01:00</strong>
+      </div>
+      <div class="stat">
+        <span data-i18n="coins">货币</span>
+        <strong id="coinText">0</strong>
+      </div>
+      <button id="shopButton" class="icon-button" title="商店" disabled data-i18n="shopShort">店</button>
+    </section>
+
+    <section class="arena-wrap">
+      <canvas id="gameCanvas" width="960" height="540" aria-label="游戏画面"></canvas>
+      <div id="centerBanner" class="center-banner hidden"></div>
+
+      <div id="startMenu" class="modal">
+        <div class="menu-tools">
+          <button id="languageToggle" class="language-toggle" type="button">中文（简体）</button>
+          <button id="audioToggle" class="audio-toggle" type="button" aria-label="关闭音乐" title="关闭音乐">
+            <span class="speaker-box"></span>
+            <span class="speaker-cone"></span>
+            <span class="speaker-wave wave-one"></span>
+            <span class="speaker-wave wave-two"></span>
+            <span class="speaker-slash"></span>
+          </button>
+        </div>
+        <div class="menu-card">
+          <p class="eyebrow" data-i18n="version">Prototype 0.2</p>
+          <h1 data-i18n="appTitle">残肢求生</h1>
+          <p data-i18n="startCopy">手术醒来后，双手不见了。你只剩一颗格外坚硬的头，以及可以被替换、升级、变卖的身体。</p>
+          <button id="startButton" data-i18n="startGame">开始游戏</button>
+          <button id="testButton" data-i18n="testMode">测试模式</button>
+          <button id="helpButton" data-i18n="help">操作指南</button>
+          <button id="aboutButton" data-i18n="about">关于</button>
+        </div>
+      </div>
+
+      <div id="pauseMenu" class="modal hidden">
+        <div class="menu-card compact">
+          <h1 data-i18n="paused">暂停</h1>
+          <button id="resumeButton" data-i18n="resume">继续战斗</button>
+          <button id="pauseHelpButton" data-i18n="help">操作指南</button>
+          <button id="exitButton" data-i18n="exitToMenu">退出到开始菜单</button>
+        </div>
+      </div>
+
+      <div id="helpModal" class="modal hidden">
+        <div class="menu-card help-card">
+          <p class="eyebrow" data-i18n="help">操作指南</p>
+          <h1 data-i18n="helpTitle">别停下，别回头</h1>
+          <div class="keyboard-guide" aria-label="虚拟键盘方向键">
+            <span></span>
+            <kbd>↑</kbd>
+            <span></span>
+            <kbd>←</kbd>
+            <kbd>↓</kbd>
+            <kbd>→</kbd>
+          </div>
+          <p data-i18n="helpMove">方向键（↑ ↓ ← →）或 WASD 控制移动。攻击会自动朝最近的敌人或可破坏箱子释放。</p>
+          <p data-i18n="helpPause">Esc 打开暂停菜单；战斗中不能打开商店，每个回合结束后才会进入改造阶段。</p>
+          <button id="closeHelpButton" data-i18n="close">关闭</button>
+        </div>
+      </div>
+
+      <div id="aboutModal" class="modal hidden">
+        <div class="menu-card compact">
+          <p class="eyebrow" data-i18n="aboutPanel">关于界面</p>
+          <h1 data-i18n="aboutTitle">残肢求生 Prototype 0.2</h1>
+          <p data-i18n="author">作者：Shuntian Yang</p>
+          <p data-i18n="aiCredit">AI assistance development by Codex ChatGPT 5.4</p>
+          <button id="closeAboutButton" data-i18n="close">关闭</button>
+        </div>
+      </div>
+
+      <div id="gameOverPanel" class="modal hidden">
+        <div class="menu-card compact">
+          <h1 id="resultTitle">战斗结束</h1>
+          <p id="resultCopy">你暂时没能查明真相。</p>
+          <button id="restartButton" data-i18n="restart">重新开始</button>
+          <button id="backMenuButton" data-i18n="backToMenu">返回开始菜单</button>
+        </div>
+      </div>
+      <div id="pauseBadge" class="pause-badge hidden" data-i18n="paused">暂停</div>
+    </section>
+
+    <section class="loadout" aria-label="义体状态">
+      <div>
+        <span data-i18n="headbutt">头槌</span>
+        <strong id="attackText">Lv.1 群体冲击</strong>
+      </div>
+      <div>
+        <span data-i18n="limbSlots">肢体槽</span>
+        <strong id="slotText">2 / 4</strong>
+      </div>
+      <div>
+        <span data-i18n="armProsthetics">手部义体</span>
+        <strong id="armText">双手缺失</strong>
+      </div>
+      <div>
+        <span data-i18n="legProsthetics">腿部义体</span>
+        <strong id="legText">原生双腿</strong>
+      </div>
+      <div>
+        <span data-i18n="relics">强化道具</span>
+        <strong id="relicText">无</strong>
+      </div>
+      <div>
+        <span data-i18n="sets">套装</span>
+        <strong id="setText">无</strong>
+      </div>
+    </section>
+  </main>
+
+  <aside id="shopModal" class="shop hidden" aria-label="义体商店">
+    <div class="shop-panel">
+      <div class="shop-head">
+        <div>
+          <p id="shopKicker">回合结束</p>
+          <h2 id="shopTitle">地下义体商店</h2>
+        </div>
+        <div class="shop-actions">
+          <label id="testRoundControl" class="test-round hidden">
+            <span data-i18n="startRound">起始回合</span>
+            <input id="testRoundInput" type="number" min="1" max="99" value="1">
+          </label>
+          <button id="nextRoundButton">下一回合</button>
+        </div>
+      </div>
+      <div id="shopSummary" class="shop-summary"></div>
+      <div id="shopGrid" class="shop-grid"></div>
+    </div>
+  </aside>
+
+  <audio id="bgmAudio" src="assets/audio/review/cybernetic-afterpulse-loop.wav" loop preload="auto"></audio>
+  <script src="game.js"></script>
+</body>
+</html>

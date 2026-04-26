@@ -1,0 +1,297 @@
+{
+  "player": {
+    "file": "characters/player.png",
+    "w": 156,
+    "h": 544
+  },
+  "player_mini": {
+    "file": "characters/player-mini.png",
+    "w": 120,
+    "h": 128
+  },
+  "head": {
+    "file": "ui/head-upgrade.png",
+    "w": 123,
+    "h": 136
+  },
+  "slot": {
+    "file": "ui/limb-slot-key.png",
+    "w": 95,
+    "h": 104
+  },
+  "enemy_chaser": {
+    "file": "enemies/chaser.png",
+    "w": 117,
+    "h": 186
+  },
+  "enemy_shooter": {
+    "file": "enemies/shooter.png",
+    "w": 146,
+    "h": 186
+  },
+  "enemy_sprinter": {
+    "file": "enemies/sprinter.png",
+    "w": 140,
+    "h": 142
+  },
+  "enemy_orderly": {
+    "file": "enemies/orderly.png",
+    "w": 122,
+    "h": 189
+  },
+  "boss": {
+    "file": "enemies/boss.png",
+    "w": 485,
+    "h": 503
+  },
+  "red_arm_icon": {
+    "file": "prosthetics/red_arm-icon.png",
+    "w": 122,
+    "h": 166
+  },
+  "red_arm_1": {
+    "file": "prosthetics/red_arm-1.png",
+    "w": 105,
+    "h": 152
+  },
+  "red_arm_3": {
+    "file": "prosthetics/red_arm-3.png",
+    "w": 115,
+    "h": 163
+  },
+  "red_arm_6": {
+    "file": "prosthetics/red_arm-6.png",
+    "w": 122,
+    "h": 167
+  },
+  "red_arm_9": {
+    "file": "prosthetics/red_arm-9.png",
+    "w": 80,
+    "h": 171
+  },
+  "blue_arm_icon": {
+    "file": "prosthetics/blue_arm-icon.png",
+    "w": 124,
+    "h": 164
+  },
+  "blue_arm_1": {
+    "file": "prosthetics/blue_arm-1.png",
+    "w": 103,
+    "h": 163
+  },
+  "blue_arm_3": {
+    "file": "prosthetics/blue_arm-3.png",
+    "w": 115,
+    "h": 164
+  },
+  "blue_arm_6": {
+    "file": "prosthetics/blue_arm-6.png",
+    "w": 124,
+    "h": 169
+  },
+  "blue_arm_9": {
+    "file": "prosthetics/blue_arm-9.png",
+    "w": 124,
+    "h": 171
+  },
+  "white_arm_icon": {
+    "file": "prosthetics/white_arm-icon.png",
+    "w": 126,
+    "h": 98
+  },
+  "white_arm_1": {
+    "file": "prosthetics/white_arm-1.png",
+    "w": 103,
+    "h": 112
+  },
+  "white_arm_3": {
+    "file": "prosthetics/white_arm-3.png",
+    "w": 115,
+    "h": 112
+  },
+  "white_arm_6": {
+    "file": "prosthetics/white_arm-6.png",
+    "w": 124,
+    "h": 118
+  },
+  "white_arm_9": {
+    "file": "prosthetics/white_arm-9.png",
+    "w": 93,
+    "h": 124
+  },
+  "red_leg_icon": {
+    "file": "prosthetics/red_leg-icon.png",
+    "w": 115,
+    "h": 144
+  },
+  "red_leg_1": {
+    "file": "prosthetics/red_leg-1.png",
+    "w": 104,
+    "h": 150
+  },
+  "red_leg_3": {
+    "file": "prosthetics/red_leg-3.png",
+    "w": 110,
+    "h": 152
+  },
+  "red_leg_6": {
+    "file": "prosthetics/red_leg-6.png",
+    "w": 116,
+    "h": 158
+  },
+  "red_leg_9": {
+    "file": "prosthetics/red_leg-9.png",
+    "w": 120,
+    "h": 166
+  },
+  "blue_leg_icon": {
+    "file": "prosthetics/blue_leg-icon.png",
+    "w": 120,
+    "h": 140
+  },
+  "blue_leg_1": {
+    "file": "prosthetics/blue_leg-1.png",
+    "w": 108,
+    "h": 154
+  },
+  "blue_leg_3": {
+    "file": "prosthetics/blue_leg-3.png",
+    "w": 110,
+    "h": 154
+  },
+  "blue_leg_6": {
+    "file": "prosthetics/blue_leg-6.png",
+    "w": 116,
+    "h": 162
+  },
+  "blue_leg_9": {
+    "file": "prosthetics/blue_leg-9.png",
+    "w": 74,
+    "h": 170
+  },
+  "white_leg_icon": {
+    "file": "prosthetics/white_leg-icon.png",
+    "w": 106,
+    "h": 87
+  },
+  "white_leg_1": {
+    "file": "prosthetics/white_leg-1.png",
+    "w": 110,
+    "h": 114
+  },
+  "white_leg_3": {
+    "file": "prosthetics/white_leg-3.png",
+    "w": 110,
+    "h": 113
+  },
+  "white_leg_6": {
+    "file": "prosthetics/white_leg-6.png",
+    "w": 118,
+    "h": 119
+  },
+  "white_leg_9": {
+    "file": "prosthetics/white_leg-9.png",
+    "w": 70,
+    "h": 123
+  },
+  "relic_bone_serum": {
+    "file": "relics/bone_serum.png",
+    "w": 103,
+    "h": 103
+  },
+  "relic_mag_spine": {
+    "file": "relics/mag_spine.png",
+    "w": 117,
+    "h": 102
+  },
+  "relic_stable_plasma": {
+    "file": "relics/stable_plasma.png",
+    "w": 84,
+    "h": 102
+  },
+  "relic_combat_chip": {
+    "file": "relics/combat_chip.png",
+    "w": 110,
+    "h": 90
+  },
+  "relic_battery_pack": {
+    "file": "relics/battery_pack.png",
+    "w": 99,
+    "h": 103
+  },
+  "relic_light_frame": {
+    "file": "relics/light_frame.png",
+    "w": 112,
+    "h": 110
+  },
+  "relic_coin_reader": {
+    "file": "relics/coin_reader.png",
+    "w": 107,
+    "h": 92
+  },
+  "relic_nano_pouch": {
+    "file": "relics/nano_pouch.png",
+    "w": 101,
+    "h": 101
+  },
+  "relic_recoil_anchor": {
+    "file": "relics/recoil_anchor.png",
+    "w": 109,
+    "h": 109
+  },
+  "relic_crate_scanner": {
+    "file": "relics/crate_scanner.png",
+    "w": 101,
+    "h": 96
+  },
+  "relic_overclock": {
+    "file": "relics/overclock.png",
+    "w": 98,
+    "h": 98
+  },
+  "relic_pain_lock": {
+    "file": "relics/pain_lock.png",
+    "w": 101,
+    "h": 97
+  },
+  "relic_shop_debt": {
+    "file": "relics/shop_debt.png",
+    "w": 109,
+    "h": 89
+  },
+  "relic_volatile_fuel": {
+    "file": "relics/volatile_fuel.png",
+    "w": 91,
+    "h": 98
+  },
+  "relic_neuro_boost": {
+    "file": "relics/neuro_boost.png",
+    "w": 118,
+    "h": 91
+  },
+  "relic_black_interface": {
+    "file": "relics/black_interface.png",
+    "w": 95,
+    "h": 110
+  },
+  "relic_cracked_core": {
+    "file": "relics/cracked_core.png",
+    "w": 110,
+    "h": 104
+  },
+  "relic_rejection_drug": {
+    "file": "relics/rejection_drug.png",
+    "w": 116,
+    "h": 92
+  },
+  "relic_unstable_field": {
+    "file": "relics/unstable_field.png",
+    "w": 123,
+    "h": 94
+  },
+  "relic_blood_contract": {
+    "file": "relics/blood_contract.png",
+    "w": 97,
+    "h": 104
+  }
+}

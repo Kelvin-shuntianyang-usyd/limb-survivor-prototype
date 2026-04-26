@@ -1,0 +1,202 @@
+{
+  "shared": {
+    "set_resonance_aura_v2": {
+      "file": "vfx/shared/set_resonance_aura_v2.png",
+      "w": 1254,
+      "h": 1254
+    }
+  },
+  "enemy": {
+    "enemy_basic": {
+      "file": "vfx/enemy/enemy_basic.png",
+      "w": 998,
+      "h": 252
+    },
+    "boss_heavy": {
+      "file": "vfx/enemy/boss_heavy.png",
+      "w": 1290,
+      "h": 526
+    },
+    "boss_burst": {
+      "file": "vfx/enemy/boss_burst.png",
+      "w": 1120,
+      "h": 369
+    },
+    "boss_homing": {
+      "file": "vfx/enemy/boss_homing.png",
+      "w": 1218,
+      "h": 588
+    },
+    "boss_ring": {
+      "file": "vfx/enemy/boss_ring.png",
+      "w": 769,
+      "h": 775
+    },
+    "boss_bombardment": {
+      "file": "vfx/enemy/boss_bombardment.png",
+      "w": 1112,
+      "h": 1122
+    }
+  },
+  "red": {
+    "punch_burst": {
+      "file": "vfx/red/punch_burst.png",
+      "w": 282,
+      "h": 358
+    },
+    "ground_crack": {
+      "file": "vfx/red/ground_crack.png",
+      "w": 293,
+      "h": 332
+    },
+    "fire_ring": {
+      "file": "vfx/red/fire_ring.png",
+      "w": 293,
+      "h": 311
+    },
+    "flame_trail": {
+      "file": "vfx/red/flame_trail.png",
+      "w": 293,
+      "h": 227
+    },
+    "stomp_impact": {
+      "file": "vfx/red/stomp_impact.png",
+      "w": 285,
+      "h": 316
+    },
+    "hit_sparks": {
+      "file": "vfx/red/hit_sparks.png",
+      "w": 236,
+      "h": 266
+    },
+    "saw_halo": {
+      "file": "vfx/red/saw_halo.png",
+      "w": 286,
+      "h": 315
+    },
+    "lava_plume": {
+      "file": "vfx/red/lava_plume.png",
+      "w": 283,
+      "h": 344
+    },
+    "burn_marker": {
+      "file": "vfx/red/burn_marker.png",
+      "w": 293,
+      "h": 329
+    },
+    "resonance_aura": {
+      "file": "vfx/red/resonance_aura.png",
+      "w": 291,
+      "h": 335
+    }
+  },
+  "blue": {
+    "lightning_chain": {
+      "file": "vfx/blue/lightning_chain.png",
+      "w": 256,
+      "h": 417
+    },
+    "electric_burst": {
+      "file": "vfx/blue/electric_burst.png",
+      "w": 293,
+      "h": 346
+    },
+    "electric_ring": {
+      "file": "vfx/blue/electric_ring.png",
+      "w": 293,
+      "h": 353
+    },
+    "blink_trail": {
+      "file": "vfx/blue/blink_trail.png",
+      "w": 293,
+      "h": 234
+    },
+    "foot_mark": {
+      "file": "vfx/blue/foot_mark.png",
+      "w": 267,
+      "h": 336
+    },
+    "paralyze_marker": {
+      "file": "vfx/blue/paralyze_marker.png",
+      "w": 278,
+      "h": 207
+    },
+    "thunder_net": {
+      "file": "vfx/blue/thunder_net.png",
+      "w": 293,
+      "h": 313
+    },
+    "coil_pulse": {
+      "file": "vfx/blue/coil_pulse.png",
+      "w": 293,
+      "h": 288
+    },
+    "arc_projectile": {
+      "file": "vfx/blue/arc_projectile.png",
+      "w": 293,
+      "h": 297
+    },
+    "resonance_aura": {
+      "file": "vfx/blue/resonance_aura.png",
+      "w": 283,
+      "h": 347
+    }
+  },
+  "white": {
+    "needle_trail": {
+      "file": "vfx/white/needle_trail.png",
+      "w": 254,
+      "h": 360
+    },
+    "needle_fan": {
+      "file": "vfx/white/needle_fan.png",
+      "w": 293,
+      "h": 474
+    },
+    "heal_ring": {
+      "file": "vfx/white/heal_ring.png",
+      "w": 293,
+      "h": 440
+    },
+    "shield_pulse": {
+      "file": "vfx/white/shield_pulse.png",
+      "w": 293,
+      "h": 440
+    },
+    "bullet_disintegrate": {
+      "file": "vfx/white/bullet_disintegrate.png",
+      "w": 249,
+      "h": 458
+    },
+    "surgery_sigil": {
+      "file": "vfx/white/surgery_sigil.png",
+      "w": 257,
+      "h": 397
+    },
+    "bastion_fragment": {
+      "file": "vfx/white/bastion_fragment.png",
+      "w": 293,
+      "h": 421
+    },
+    "bastion_field_v2": {
+      "file": "vfx/white/bastion_field_v2.png",
+      "w": 1254,
+      "h": 1254
+    },
+    "sterile_burst": {
+      "file": "vfx/white/sterile_burst.png",
+      "w": 293,
+      "h": 465
+    },
+    "regen_particles": {
+      "file": "vfx/white/regen_particles.png",
+      "w": 293,
+      "h": 442
+    },
+    "resonance_aura": {
+      "file": "vfx/white/resonance_aura.png",
+      "w": 228,
+      "h": 152
+    }
+  }
+}
